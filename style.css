@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nerko One',Arial, Helvetica, sans-serif;
+    background: #c8add8;
+}
+
+header nav{
+    margin-top: 10px;
+    display: flex;
+    background: rgba(128, 128, 128, 0.315);
+    border-radius: 50px;
+    position: sticky;
+    width: 1183px;
+    margin-left: 90px;
+}
+
+.links {
+    font-family: 'Nerko One';
+    margin: 10px;
+    margin-left: 150px;
+    margin-top: 20px;
+}
+
+.links a{
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 30px;
+    color: black;
+}
+
+header nav h2{
+    font-size: 50px;
+    margin: 10px;
+    margin-left: 130px;
+    margin-top: 5px;
+}
+
+.links a:hover{
+    font-size: 32px;
+}
+
+/*About Section*/
+
+.about{
+    display: flex;
+}
+
+.left{
+    background: red;
+    width: 500px;
+    height: 480px;
+    margin-top: 20px;
+    margin-left: 75px;
+}
+
+.right{
+    background: red;
+    width: 500px;
+    height: 480px;
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+.right h1{
+    font-family: 'Cedarville Cursive','Nerko One',Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 100px;
+    text-shadow: 5px 5px 0px #3624d45e;
+}
