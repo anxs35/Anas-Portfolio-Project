@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&display=swap'); 
 
 *{
     margin: 0;
@@ -9,7 +10,7 @@
 
 body{
     font-family: 'Nerko One',Arial, Helvetica, sans-serif;
-    background: #c8add8;
+    background: #4d335c;
 }
 
 header nav{
@@ -17,7 +18,7 @@ header nav{
     display: flex;
     background: rgba(128, 128, 128, 0.315);
     border-radius: 50px;
-    position: sticky;
+    position: fixed;
     width: 1183px;
     margin-left: 90px;
 }
@@ -38,6 +39,7 @@ header nav{
 
 header nav h2{
     font-size: 50px;
+    font-weight: 300;
     margin: 10px;
     margin-left: 130px;
     margin-top: 5px;
@@ -54,25 +56,122 @@ header nav h2{
 }
 
 .left{
-    background: red;
-    width: 500px;
+    width: 450px;
     height: 480px;
-    margin-top: 20px;
-    margin-left: 75px;
+    margin-top: 60px;
+    margin-left: 105px;
+}
+
+.left img{
+    margin-top: 58px;
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 250px;
+    box-shadow: 10px 10px rgba(0, 0, 0, 0.301);
 }
 
 .right{
-    background: red;
     width: 500px;
     height: 480px;
-    margin-top: 20px;
+    margin-top: 80px;
     margin-left: 200px;
 }
 
 .right h1{
     font-family: 'Cedarville Cursive','Nerko One',Arial, Helvetica, sans-serif;
-    font-size: 100px;
+    font-size: 130px;
+    font-weight: 100;
     text-align: center;
-    margin-top: 100px;
-    text-shadow: 5px 5px 0px #3624d45e;
+    margin-top: 70px;
+    color: black;
+    text-shadow: 5px 5px rgba(245, 245, 220, 0.568);
+}
+
+.right p{
+    font-size: 40px;
+    text-align: center;
+    width: 340px;
+    margin-left: 82px;
+    margin-top: -30px;
+    font-family: 'Handjet';
+    color: whitesmoke;
+    text-shadow: 3px 5px black;
+}
+
+/*Skills Section*/
+
+.skill .skill-container{
+    display: flex;
+}
+
+.skill h1{
+    text-align: center;
+    margin-top: 60px;
+    font-size: 80px;
+    color: whitesmoke;
+    text-shadow: 5px 10px black;
+}
+
+.skill .left{
+    margin-top: 10px;
+    margin-left: 150px;
+    width: 450px;
+}
+
+.skill .right{
+    width: 450px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.skill .left img{
+    margin-top: 45px;
+    width: 60px;
+    border: none;
+    box-shadow: none;
+}
+
+.progress-bar__wrapper {
+    position: relative;
+    margin-left: 70px;
+    margin-top: -43px;
+  }
+  .progress-bar__value {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: antiquewhite;
+    gap: 8px;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+  }
+  progress {
+    width: 70%;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #ddd;
+    transition: width 300ms ease;
+    box-shadow: 3px 3px rgba(255, 255, 255, 0.418);
+  }
+  progress[value]::-webkit-progress-bar {
+    width: 100%;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #000000;
+    transition: width 300ms ease;
+  }
+  progress[value]::-webkit-progress-value {
+    width: 0;
+    border-radius: 50px;
+    background-color: rgb(8, 115, 202);
+    transition: width 300ms ease;
+  }
+
+  .skill .right img{
+    margin-top: 45px;
+    width: 60px;
+    border: none;
+    box-shadow: none;
 }
